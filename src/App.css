@@ -1,38 +1,60 @@
+body {
+  background-color: #B2EBF2;
+  color: #00695C;
+}
+
 .App {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  padding-top: 50px;
+}
+
+h1 {
+  margin-bottom: 40px;
   text-align: center;
+  font-size: 26px;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Calc {
+  width: 520px;
+  background-color: #E3F2FD;
+  box-shadow: 0 4px 30px skyblue;
+  border: 2px solid skyblue;
+  border-radius: 10px; 
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Disp {
+  height: 50px;
+  background-color: #FFFFFF;
+  border: 2px solid #B2EBF2;
+  border-radius: 10px; 
+  font-size: 2em;
+  text-align: right;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Buttons {
+  padding-top: 10px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.Buttons > button {
+  background-color: #D7CCC8;
+  border: 2px solid #B2EBF2;
+  border-radius: 10px; 
+  color: #00695C;
+  font-size: 2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Buttons > button:hover {
+  background-color: #B2EBF2;
+  border: 1px solid #D7CCC8;
 }
